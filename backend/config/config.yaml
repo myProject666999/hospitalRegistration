@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  mode: debug
+
+database:
+  host: localhost
+  port: 3306
+  username: root
+  password: 123456
+  dbname: hospital_registration
+  charset: utf8mb4
+  max_idle_conns: 10
+  max_open_conns: 100
+
+jwt:
+  secret: hospital_registration_secret_key_2024
+  expire: 7200
+
+log:
+  level: debug
+  filename: logs/app.log
+  max_size: 100
+  max_backups: 5
+  max_age: 30
+  compress: true
